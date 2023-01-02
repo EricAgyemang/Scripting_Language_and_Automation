@@ -1,2 +1,2 @@
 *.py linguist-detectable=true
-*.jnb linguist-detectable=false
+*.ipynb linguist-detectable=false
