@@ -1,0 +1,12 @@
+Knowledge Points of Ch6 "Manipulating Strings"
+1. How to write a string: a string begins and ends with a single quote.
+    Double Quotes; Escape Characters; Raw Strings; Multiline Strings with Triple Quotes; Multiline Comments.
+2. Indexing and Slicing Strings.
+3. The in and not in Operators with Strings
+4. Useful String Methods: upper(), lower(), isupper(), islower(),
+                                          isalpha(), isalnum(), isdecimal(), isspace(), istitle()
+                                          startswith(), endswith() 
+                                          join(), split()
+                                          Justifying Text with rjust(), ljust(), and center()
+                                          Removing Whitespace with strip(), rstrip(), and lstrip()
+                                          Copying and Pasting Strings with the pyperclip Module  

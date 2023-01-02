@@ -1,0 +1,27 @@
+dataset = []
+
+with open("salary.csv") as file:
+    data = file.readlines()
+    for item in data:
+        s1 = item.strip()
+        s2 = s1.split(",")
+        dataset.append(s2)
+
+print(dataset)
+
+import random
+def splitTrainTest(aList, ratio):
+    num_train = round(len(aList) * ratio)
+    #trainSet = aList[:num_train]
+    #testSet = aList[num_train:]
+    trainSet = []
+    while len(trainSet) < num_train:
+        index = random.randint(0, len(aList) - 1)
+        trainSet.append(aList[index])
+        aList.pop(index) 
+    testSet = aList  
+    return trainSet, testSet
+
+trainSet, testSet = splitTrainTest(dataset, 0.8)
+print(trainSet)
+print(testSet)

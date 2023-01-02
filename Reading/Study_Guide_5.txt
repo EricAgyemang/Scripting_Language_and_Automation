@@ -1,0 +1,9 @@
+Knowledge Points of Ch5 "Dictionaries and Structuring Data"
+1. A dictionary is typed with braces {}. Each item in a dictionary is a key-value pair, where "key" functions as the index to access its associated value. 
+2. An empty dictionary without any items is written with just two curly braces, like this: {}. 
+3. Keys should be unique within a dictionary while values may not be. The values of a dictionary can be of any type, but the keys must be of an immutable data type such as strings, numbers, or tuples.
+4. Unlike lists, items in dictionaries are unordered.  Because dictionaries are not ordered, they can’t be sliced like lists.
+5. The keys(), values(), and items() Methods. 
+6. Checking Whether a Key or Value Exists in a Dictionary using "in" and "not in".
+7. The get() Method
+8. Nested Dictionaries and Lists

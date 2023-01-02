@@ -1,0 +1,9 @@
+Knowledge Points of Ch1 "Python Basics"
+1. Python shell vs. IDLE
+2. Expressions
+3. Operators and Precedence: **; %; //; /; *; -; +
+4. The Integer, Floating-Point, and String Data Types
+5. String Concatenation and Replication
+6. Storing Values in Variables
+    6.1 rules for variables names
+7. Built-in functions: print(); input(); len(); str(); int(); float();

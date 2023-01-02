@@ -1,0 +1,23 @@
+Knowledge Points of Ch2 "Flow Control"
+1. Flow control statements can decide which Python instructions to execute under which conditions.
+2. Boolean values, comparison operators, and Boolean operators.
+    2.1  The Boolean data type has only two values: True and False. 
+    2.2 Comparison Operators compare two values and evaluate down to a single Boolean value: ==; !=; <; >;<=; >=;
+    2.3 Boolean Operators
+          2.3.1 Binary Boolean Operators: The AND and OR operators always take two Boolean values (or expressions), so they’re considered binary operators. The and operator evaluates an expression to True if both Boolean values are True; otherwise, it evaluates to False. On the other hand, the or operator evaluates an expression to True if either of the two Boolean values is True. If both are False, it evaluates to False.
+          2.3.2 The not Operator
+          2.3.3 Mixing Boolean and Comparison Operators
+3. Elements of Flow Control
+    3.1 Conditions
+    3.2 Blocks of Code
+          Blocks begin when the indentation increases.
+          Blocks can contain other blocks.
+          Blocks end when the indentation decreases to zero or to a containing block’s indentation.
+    3.3 Flow Control Statements: 
+          if-else (elif)
+          while (break; continue)
+          for (range() function: The Starting, Stopping, and Stepping Arguments to range())
+4. Importing Modules
+    using import moduleName, we can call a function from this module as moduleName.funcName() (Note: considered as better documentation)
+    using from moduleName import *, we can simply call funcName() without stating which module it comes from
+5. Ending a Program Early with sys.exit()

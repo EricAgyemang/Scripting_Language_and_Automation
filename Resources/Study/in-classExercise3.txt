@@ -1,0 +1,71 @@
+import random
+
+stuNameList = ['alice', 'bob', 'cindy', 'david', 'ellen', 'frank', 'grace', 'hellen']
+
+courseList = [168, 170, 225, 254, 276, 351, 373, 377, 379, 281]
+
+class Person:
+  def __init__(self, name):
+    self.name = name
+
+class Student(Person):
+  def __init__(self, name):
+    Person.__init__(self, name)
+    self.selectedCourseList = []
+    self.courseGradeDisc = {}
+    
+  def getName(self):
+    return self.name
+  
+  def sayHello(self):
+    print("My name is " + self.name)
+    
+  def getCourse(self, courseList, numOfCourses):
+    while((len(self.selectedCourseList) != numOfCourses)):
+      selectedCourse = courseList[random.randint(0, len(courseList) - 1)]
+      if (selectedCourse not in self.selectedCourseList):
+        self.selectedCourseList.append(selectedCourse)
+
+  def assignGrade(self, courseList):
+    
+    for courseID in courseList:
+      self.courseGradeDisc[courseID] = random.randint(60, 100)
+    #print(courseGradeDisc)
+
+  def getGrade(self):
+    grade = random.randrange(60,100)
+    return grade
+
+  def getSelectedCourseList(self):
+    return self.selectedCourseList;
+  
+  def showSelectedCourse(self):
+    print(self.selectedCourseList)
+
+
+studentObjList = []
+
+for name in stuNameList:
+  stuObj = Student(name)
+  studentObjList.append(stuObj)
+  
+for stuObj in studentObjList:
+  stuObj.getCourse(courseList, 3)
+  #stuObj.showSelectedCourse()
+  stuObj.assignGrade(stuObj.getSelectedCourseList())
+
+newDict = {}
+
+
+for i in range(len(courseList)):
+  newList = []
+  for stuObj in studentObjList:
+    if courseList[i] in stuObj.getSelectedCourseList():
+      newList.append([stuObj.getName(), stuObj.courseGradeDisc[courseList[i]]] )
+  #print(newList)
+  newDict[courseList[i]] = newList
+
+#newDict[courseList[i]] = newList
+
+for key, val in newDict.items():
+  print(key, val)

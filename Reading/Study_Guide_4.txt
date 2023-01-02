@@ -1,0 +1,32 @@
+Knowledge Points of Ch4 "List"
+1. Data structures are used to store a collection of related data.
+2. There are four built-in data structures in Python - list, tuple, dictionary, and set.
+3. A list is a value that contains multiple values in an ordered sequence. Since lists themselves can contain other lists, you can use them to arrange data into hierarchical structures.
+4. A list begins with an opening square bracket and ends with a closing square bracket, []. Values inside the list are also called items. Items are separated by commas and can be different data types.
+5. The value [] is an empty list that contains no values, 
+6. You can get Individual Values in a List with Indexes, starting from 0. Indexes can be only integer values. You can also use negative integers for the index. For example, index -2 refers to the second-to-last index in a list.
+7. Lists can also contain other list values. The values in these lists of lists can be accessed using multiple indexes. 
+   For example, spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]. Then spam[1][4] returns 50. 
+8. You can get a sublist with a slice. A slice is typed between square brackets, like an index, but it has two integers separated by a colon. In a slice, the first integer is the index where the slice starts. The second integer is the index where the slice goes up to, but will not include,
+9. Some List related methods:
+    Getting a List’s Length with len()
+    Changing Values in a List with Indexes
+    List Concatenation (+) and List Replication (*)
+    Removing Values from Lists with del Statements
+    Finding a Value in a List with the index() Method
+    Adding Values to Lists with the append() and insert() Methods
+    Removing Values from Lists with remove() method
+    Sorting the Values in a List with the sort() Method
+10. Using for Loops with Lists
+11. The in and not in Operators
+12. The Multiple Assignment Trick
+13. Augmented Assignment Operators
+14. List-like Types: Strings and Tuples
+15. Mutable and Immutable Data Types
+      A list value is a mutable data type: It can have values added, removed, or changed. However, a string is immutable: It cannot be changed. 
+16. The tuple data type is almost identical to the list data type, except in two ways: A Tuple is defined by () and is immutable.
+       If you need an ordered sequence of values that never change, use a tuple.
+17. Converting Types with the list() and tuple() Functions
+18. The copy Module’s copy() and deepcopy() Functions
+
+    
